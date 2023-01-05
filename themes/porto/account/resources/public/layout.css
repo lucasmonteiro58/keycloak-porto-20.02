@@ -1,0 +1,290 @@
+/* Globals */
+.brand {
+  height: 35px;
+}
+
+.delete-button {
+  width: 150px;
+  height: 50px;
+}
+
+@media (max-width: 320px) {
+  .delete-button {
+    width: 120px;
+    height: 50px;
+  }
+}
+
+/* Linked Accounts screen */
+.idp-icon-social {
+  width: 32px;
+  height: 32px;
+}
+
+#github-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_github_transparent.svg);
+}
+
+#linkedin-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_linkedin_transparent.svg);
+}
+
+#facebook-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_facebook_transparent.svg);
+}
+
+#google-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_google_transparent.svg);
+}
+
+#microsoft-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_microsoft_transparent.svg);
+}
+
+#instagram-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_instagram_transparent.svg);
+}
+
+#stackoverflow-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_stack_transparent.svg);
+}
+
+#twitter-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_twitter_transparent.svg);
+}
+
+#openshift-idp-icon-social {
+  background-image: url(../img/socialmedia/socialmedia_icons_openshift_transparent.svg);
+}
+
+/* Account Page screen */
+.personal-info-form .pf-c-form__group-control {
+  max-width: 600px;
+}
+
+/* Device Activity screen */
+.signed-in-device-list .pf-c-data-list__item-row {
+  --pf-c-data-list__item-row--PaddingRight: 0;
+  --pf-c-data-list__item-row--PaddingLeft: 0;
+}
+
+.signed-in-device-list .pf-c-data-list__expandable-content-body {
+  --pf-c-data-list__expandable-content-body--PaddingRight: 0;
+}
+
+.signed-in-device-grid {
+  grid-template-columns: auto repeat(11, [col-start] 1fr);
+}
+
+.signed-in-device-list.pf-c-data-list {
+  --pf-c-data-list--sm--BorderTopWidth: 0;
+}
+
+.pf-c-data-list__item {
+  --pf-c-data-list__item--BorderBottomWidth: 1px;
+  --pf-c-data-list__item--BorderBottomColor: var(--pf-global--BorderColor--100);
+}
+
+.signed-in-device-list.pf-c-data-list {
+  --pf-c-data-list--BorderTopWidth: 0;
+}
+
+@media (min-width: 576px) {
+  .pf-c-data-list__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pf-c-data-list__item--BackgroundColor);
+    border-bottom: var(--pf-c-data-list__item--BorderBottomWidth) solid
+      var(--pf-c-data-list__item--BorderBottomColor);
+  }
+
+  .signed-in-device-list.pf-c-data-list {
+    --pf-c-data-list--BorderTopWidth: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .signed-in-device-list .pf-c-description-list {
+    --pf-c-description-list--GridTemplateColumns--count: 5;
+  }
+}
+
+/* Signing in screen */
+.title-case:first-letter,
+.cred-title:first-letter,
+#otp-not-set-up .pf-c-empty-state__body:first-letter {
+  text-transform: capitalize;
+}
+
+/* Applications screen */
+#applications-list-header .pf-c-data-list__item-content {
+  --pf-c-data-list__item-content--md--PaddingBottom: 1rem;
+}
+
+.pf-u-pl-35xl {
+  padding-left: 4.5rem;
+}
+
+/* Porto Styles*/
+
+:root {
+  --porto-primary-color: #70ba05;
+  --porto-secondary-color: #007249;
+  --porto-info-color: #008ccd;
+  --porto-success-color: #00a439;
+  --porto-warning-color: #e0af0c;
+  --porto-danger-color: #ed3237;
+  --porto-help-color: #a33c60;
+  --porto-gray-light: #e6e7e8;
+  --porto-border-color: #ced4da;
+  font-size: 14px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+.pf-c-page__header {
+  background-color: white;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+    drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.brand {
+  height: 80px;
+}
+
+.pf-c-page__header-brand-link .pf-c-brand {
+  max-height: 60px;
+}
+
+.pf-c-page__sidebar {
+  background-color: white;
+  box-shadow: 0.5rem 0 0.75rem -0.5rem rgba(3, 3, 3, 0.18) !important;
+}
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+#nav-toggle {
+  color: rgba(0, 0, 0, 0.503);
+}
+
+.pf-c-button {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    box-shadow 0.2s;
+  border-radius: 3px;
+}
+
+.pf-m-primary {
+  background: var(--porto-primary-color) !important;
+  border: 1px solid var(--porto-primary-color) !important;
+  color: white !important;
+}
+
+.pf-m-secondary {
+  background-color: white !important;
+  color: var(--porto-primary-color) !important;
+  border: 1px solid var(--porto-primary-color) !important;
+}
+
+.pf-c-button::after {
+  border: none;
+}
+
+.pf-m-link {
+  color: var(--porto-primary-color) !important;
+}
+
+.pf-c-data-list__item::before {
+  background-color: var(--porto-primary-color) !important;
+}
+
+#signOutButton,
+#cancel-btn {
+  background: white !important;
+  color: var(--porto-primary-color) !important;
+  border: 1px solid var(--porto-primary-color) !important;
+}
+
+.pf-m-primary:enabled:active {
+  background: #5a9504;
+  color: #fff;
+  border-color: #5a9504;
+}
+
+.pf-m-primary:enabled:hover {
+  background: #65a705;
+  color: #fff;
+  border-color: #65a705;
+}
+
+button[name="cancel-aia"] {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--porto-danger-color);
+  border: 1px solid;
+}
+
+button[name="cancel-aia"]:hover {
+  background: rgba(237, 50, 55, 0.04) !important;
+  color: var(--porto-danger-color) !important;
+  border: 1px solid !important;
+}
+
+button[name="cancel-aia"]:active {
+  background: rgba(237, 50, 55, 0.16) !important;
+  color: var(--porto-danger-color) !important;
+  border: 1px solid !important;
+}
+
+.pf-c-card__body > a {
+  color: var(--porto-primary-color) !important;
+}
+
+#landing-signingin a,
+#landing-device-activity a {
+  color: var(--porto-primary-color);
+}
+
+.pf-c-nav__link:hover,
+.pf-c-nav__link.pf-m-hover,
+.pf-c-nav__link:active {
+  background-color: inherit !important;
+  color: black;
+}
+
+.pf-c-nav__link {
+  color: #363636;
+}
+
+.pf-c-nav__link.pf-m-current {
+  background-color: var(--porto-primary-color) !important;
+  color: white;
+}
+
+.pf-c-nav__link.pf-m-current::after {
+  border-color: var(--porto-secondary-color) !important;
+}
+
+.pf-c-nav__link::before {
+  border-bottom-width: 0px !important;
+  border-color: white !important;
+}
+
+.pf-c-nav__item.pf-m-expanded {
+  background-color: white !important;
+}
+
+.pf-c-nav__item.pf-m-expandable::before {
+  border-bottom: none;
+}
+
+#nav-link-security:hover,
+#nav-link-security:focus,
+#nav-link-security:active {
+  background-color: white !important;
+  color: black;
+}
